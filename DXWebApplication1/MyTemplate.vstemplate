@@ -1,0 +1,91 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>DXWebApplication1</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DXWebApplication1</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="DXWebApplication1.csproj" File="DXWebApplication1.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Admin.aspx">Admin.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Admin.aspx.cs">Admin.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Admin.aspx.designer.cs">Admin.aspx.designer.cs</ProjectItem>
+      <Folder Name="App_Data" TargetFolderName="App_Data">
+        <ProjectItem ReplaceParameters="false" TargetFileName="NWind.mdf">NWind.mdf</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="NWind_log.ldf">NWind_log.ldf</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SideMenu.xml">SideMenu.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TopMenu.xml">TopMenu.xml</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CariKartlar.aspx">CariKartlar.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CariKartlar.aspx.cs">CariKartlar.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CariKartlar.aspx.designer.cs">CariKartlar.aspx.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CekBilgileri.aspx">CekBilgileri.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CekBilgileri.aspx.cs">CekBilgileri.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CekBilgileri.aspx.designer.cs">CekBilgileri.aspx.designer.cs</ProjectItem>
+      <Folder Name="Content" TargetFolderName="Content">
+        <Folder Name="Images" TargetFolderName="Images">
+          <ProjectItem ReplaceParameters="false" TargetFileName="AquaHeader.jpg">AquaHeader.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="BlackGlassHeader.jpg">BlackGlassHeader.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="GlassHeader.jpg">GlassHeader.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="PlasticBlueHeader.jpg">PlasticBlueHeader.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="RedWineHeader.jpg">RedWineHeader.jpg</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Site.css">Site.css</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Default.aspx">Default.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Default.aspx.cs">Default.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Default.aspx.designer.cs">Default.aspx.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FirmaBilgiGirisi.aspx">FirmaBilgiGirisi.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FirmaBilgiGirisi.aspx.cs">FirmaBilgiGirisi.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FirmaBilgiGirisi.aspx.designer.cs">FirmaBilgiGirisi.aspx.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax">Global.asax</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax.cs">Global.asax.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Hakkımızda.aspx">vstg0001.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Hakkımızda.aspx.cs">vstg0002.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Hakkımızda.aspx.designer.cs">vstg0003.aspx.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Iletisim.aspx">Iletisim.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Iletisim.aspx.cs">Iletisim.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Iletisim.aspx.designer.cs">Iletisim.aspx.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Light.master">Light.master</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Light.master.cs">Light.master.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Light.master.designer.cs">Light.master.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Main.master">Main.master</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Main.master.cs">Main.master.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Main.master.designer.cs">Main.master.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MusteriArama.aspx">MusteriArama.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MusteriArama.aspx.cs">MusteriArama.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MusteriArama.aspx.designer.cs">MusteriArama.aspx.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MusteriKayit.aspx">MusteriKayit.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MusteriKayit.aspx.cs">MusteriKayit.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MusteriKayit.aspx.designer.cs">MusteriKayit.aspx.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PersonelArama.aspx">PersonelArama.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PersonelArama.aspx.cs">PersonelArama.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PersonelArama.aspx.designer.cs">PersonelArama.aspx.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PersonelBilgiGirisi.aspx">PersonelBilgiGirisi.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PersonelBilgiGirisi.aspx.cs">PersonelBilgiGirisi.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PersonelBilgiGirisi.aspx.designer.cs">PersonelBilgiGirisi.aspx.designer.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="licenses.licx">licenses.licx</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Root.master">Root.master</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Root.master.cs">Root.master.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Root.master.designer.cs">Root.master.designer.cs</ProjectItem>
+      <Folder Name="Service References" TargetFolderName="Service References" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="UrunSatisi.aspx">UrunSatisi.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="UrunSatisi.aspx.cs">UrunSatisi.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="UrunSatisi.aspx.designer.cs">UrunSatisi.aspx.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Debug.config">Web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

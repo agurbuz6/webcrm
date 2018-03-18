@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Root.master" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="$safeprojectname$.MainMaster" %>
+
+<%-- DXCOMMENT: Page Main.master is a master page that contains central area layout --%>
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+    <dx:ASPxNavBar ID="ASPxNavBar1" runat="server" Theme="BlackGlass" >
+    <Groups>
+        <dx:NavBarGroup Text="Müşteri İşlemleri">
+            <Items>
+                <dx:NavBarItem NavigateUrl="~/MusteriKayit.aspx" Text="Müşteri Kayit">
+                    <Image IconID="people_customer_16x16">
+                    </Image>
+                </dx:NavBarItem>
+                <dx:NavBarItem Text="Müşteri Arama" NavigateUrl="~/MusteriArama.aspx">
+                    <Image IconID="find_findcustomers_16x16">
+                    </Image>
+                </dx:NavBarItem>
+            </Items>
+        </dx:NavBarGroup>
+        <dx:NavBarGroup Text="Personel İşlemleri">
+            <Items>
+                <dx:NavBarItem Text="Personel Bilgi Girişi" NavigateUrl="~/PersonelBilgiGirisi.aspx">
+                    <Image IconID="businessobjects_bocustomer_16x16">
+                    </Image>
+                </dx:NavBarItem>
+                <dx:NavBarItem Text="Personel Arama" NavigateUrl="~/PersonelArama.aspx">
+                    <Image IconID="find_findbyid_16x16">
+                    </Image>
+                </dx:NavBarItem>
+            </Items>
+        </dx:NavBarGroup>
+        <dx:NavBarGroup Text="Firma İşlemleri">
+            <Items>
+                <dx:NavBarItem Text="Firma Bilgi Girişi" NavigateUrl="~/FirmaBilgiGirisi.aspx">
+                    <Image IconID="spreadsheet_allowuserstoeditranges_16x16">
+                    </Image>
+                </dx:NavBarItem>
+                <dx:NavBarItem Text="Cari Kartlar" NavigateUrl="~/CariKartlar.aspx">
+                    <Image IconID="mail_contact_16x16">
+                    </Image>
+                </dx:NavBarItem>
+                <dx:NavBarItem Text="Çek Bilgileri" NavigateUrl="~/CekBilgileri.aspx">
+                    <Image IconID="programming_showtestreport_16x16">
+                    </Image>
+                </dx:NavBarItem>
+            </Items>
+        </dx:NavBarGroup>
+        <dx:NavBarGroup Text="Ürün İşlemleri">
+            <Items>
+                <dx:NavBarItem Text="Ürün Satış Bilgileri" NavigateUrl="~/UrunSatisi.aspx">
+                    <Image IconID="support_packageproduct_16x16">
+                    </Image>
+                </dx:NavBarItem>
+            </Items>
+        </dx:NavBarGroup>
+    </Groups>
+</dx:ASPxNavBar>
+    <dx:ASPxSplitter ID="ContentSplitter" runat="server" Width="100%" Height="100%">
+                <ClientSideEvents PaneResized="function(s, e) { 
+            if(window.ASPxGridView1 && e.pane.name == 'ContentCenter')
+                ASPxGridView1.SetHeight(e.pane.GetClientHeight());
+            }" />
+                        <Styles>
+            <Pane>
+                <Paddings Padding="0px" />
+                <Border BorderWidth="0px" />
+            </Pane>
+        </Styles>
+        <Panes>
+            <dx:SplitterPane Name="ContentLeft" ShowCollapseBackwardButton="True" Size="200px" MinSize="150px">
+                <PaneStyle CssClass="leftPane">
+<Paddings Padding="1px"></Paddings>
+                </PaneStyle>
+                <PaneStyle>
+                    <Paddings Padding="1px" />
+                </PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl>
+                        <div class="leftPanel">
+                            <%-- DXCOMMENT: Configure the left panel's ASPxNavBar --%>
+
+                        </div>
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+            <dx:SplitterPane Name="ContentCenter" ScrollBars="Auto">
+                <PaneStyle CssClass="contentPane"></PaneStyle>
+                <Separator Visible="True">
+                    <SeparatorStyle>
+                        <Border BorderWidth="1px" />
+                        <BorderTop BorderWidth="0px" />
+                    </SeparatorStyle>
+                </Separator>
+                <ContentCollection>
+                    <dx:SplitterContentControl>
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+            
+        </Panes>
+    </dx:ASPxSplitter>
+    
+<%-- DXCOMMENT: Configure a datasource for the left panel's ASPxNavBar --%>
+<asp:XmlDataSource ID="XmlDataSourceLeft" runat="server" DataFile="~/App_Data/SideMenu.xml"
+    XPath="/menu/*"></asp:XmlDataSource>
+
+    
+</asp:Content>

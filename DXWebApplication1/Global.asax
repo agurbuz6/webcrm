@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="$safeprojectname$.Global_asax" Language="C#" %>
